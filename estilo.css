@@ -16,6 +16,7 @@ h1.capitulo {font-size: 30pt;}
 h2, h3, h4, h5, h6 {font-family: Arial, Calibri, sans-serif; 
 					font-size: 1.7em; 
 					color: black;
+					background: transparent;
 					}
 					
 /* a=0 b=0 c=1 -> Especificidad = 1*/
@@ -37,9 +38,9 @@ h2, h4, h6 {font-style: italic;}
 /* PARRAFOS */
 /* a=0 b=0 c=1 -> Especificidad = 1*/
 p, ul, td, figcaption {font-family: Georgia, Garamond, "Times New Roman", serif; 
-			font-size: 16pt; 
 			font-size-adjust: 0.5;}
-
+/* a=0 b=0 c=1 -> Especificidad = 1*/
+p, ul, td {font-size: 16pt;}
 /* a=0 b=0 c=2 -> Especificidad = 2*/
 p::first-letter {font-size: 20pt;}
 
@@ -53,11 +54,13 @@ figcaption { font-size: 1.2em;}
 /* a=0 b=0 c=2 -> Especificidad = 2*/
 a:link {color: navy; 
 		text-decoration-line: underline; 
-		text-decoration-style: dotted;}
+		text-decoration-style: dotted;
+		background: transparent;}
 /* a=0 b=0 c=2 -> Especificidad = 2*/
 a:visited {color: maroon; 
 			text-decoration-line: underline; 
-			text-decoration-style: solid;}
+			text-decoration-style: solid;
+			background: transparent;}
 
 /* ESTILO LISTAS */
 /* a=0 b=0 c=2 -> Especificidad = 2*/
@@ -93,16 +96,6 @@ video, audio { display: block;
         margin-right: auto;
 }
 
-
-body {
-	background-color: silver;
-	background-image: url(cardboard.png);
-	background-size: cover;
-	background-position: 0% 0%;
-	background-origin: border-box, content-box;
-	background-repeat: no-repeat;
-	background-attachment: scroll;
-}
 
 
 
