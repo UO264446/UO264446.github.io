@@ -40,9 +40,9 @@ h2, h4, h6 {font-style: italic;}
 p, ul, td, figcaption {font-family: Georgia, Garamond, "Times New Roman", serif; 
 			font-size-adjust: 0.5;}
 /* a=0 b=0 c=1 -> Especificidad = 1*/
-p, ul, td {font-size: 16pt;}
+p, ul, td {font-size: 20pt;}
 /* a=0 b=0 c=2 -> Especificidad = 2*/
-p::first-letter {font-size: 20pt;}
+p::first-letter {font-size: 24pt;}
 
 /* a=0 b=0 c=1 -> Especificidad = 1*/
 p{text-align: justify;}
@@ -65,11 +65,11 @@ a:visited {color: maroon;
 /* ESTILO LISTAS */
 /* a=0 b=0 c=2 -> Especificidad = 2*/
 ul li {list-style-type: square; 
-		font-size: 16pt;}
+		font-size: 20pt;}
 
 /* ESTILO TABLAS */
 /* a=0 b=0 c=2 -> Especificidad = 2*/
-tr th {font-size: 20pt; 
+tr th {font-size: 24pt; 
 		font-weight: bold;
 		color: white;
 		background: maroon;
