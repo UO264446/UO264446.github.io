@@ -1,0 +1,10 @@
+body {
+	background-color: silver;
+	background-image: url(cardboard.png);
+	background-size: cover;
+	background-position: 0% 0%;
+	background-origin: border-box, content-box;
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+}
+
