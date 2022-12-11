@@ -1,0 +1,54 @@
+body {
+    display: grid;
+    grid-template-areas: 
+        'header'
+        'menu'
+        'main';
+}
+
+header { grid-area: header; }
+nav { grid-area: menu; }
+main { grid-area: main; }
+main>p:first-of-type { grid-area: introduccion; }
+
+nav a {
+    float: left;
+}
+
+.main-index {
+    display: grid;
+    grid-template-areas:
+        'index-section1 index-aside'
+        'index-section2 index-aside';
+    column-gap: 5vw;
+}
+
+.main-index>section:first-of-type { grid-area: index-section1; }
+.main-index>section:last-of-type { grid-area: index-section2; }
+.main-index>aside { grid-area: index-aside; }
+
+.main-ballet img, .main-ballet figure, .main-ballet video {
+    display: block;
+    margin: 0 auto;
+}
+
+.galeria-imagenes {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding-right: 4vw;
+}
+
+img, figure img+figcaption {
+    display:block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+aside {
+    padding: 0.75vw;
+    float: right;
+    display: block;
+    margin-left: 0.9vw;
+    margin-right: auto;
+}

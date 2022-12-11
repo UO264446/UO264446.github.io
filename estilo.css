@@ -1,0 +1,102 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+hgroup {
+    background-color: darkslateblue;
+    color: white;
+    padding: 2%;
+}
+
+nav {
+    background-color:cornflowerblue;
+    color: aliceblue;
+}
+
+nav a {
+    text-align: center;
+    color: white;
+    background-color: cornflowerblue;
+    font-size: 1.2vw;
+    padding: 0.9vw 1vw;
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color:lightsteelblue;
+    color: white;
+}
+
+nav a:active {
+    background-color: cadetblue;
+    color: lightsteelblue;
+}
+
+main {
+    padding: 1.2vw 4vw;
+    text-align: justify;
+}
+
+main>h2 {
+    background-color: cornflowerblue;
+    color: white;
+    padding: 1vw;
+    border-radius: 1vw;
+    opacity: 90%;
+}
+
+table {
+    border-collapse: collapse;
+    text-align: left;
+}
+
+th {
+    color: white;
+    background-color: cornflowerblue;
+}
+
+th, td {
+    padding:  0.7vw;
+    border: 0.07vw solid white;
+}
+
+tr:nth-child(even) {
+    background-color: aliceblue;
+    color: black;
+}
+
+.main-ballet img, .main-ballet figure, .main-ballet video {
+    text-align: center;
+}
+
+img, figure img+figcaption {
+    text-align: center;
+}
+
+aside {
+    color: black;
+    height: auto;
+    background-color: white;
+}
+
+aside>h2 {
+    text-align: center;
+}
+
+.main-index>aside {
+    border: 0.1vw solid darkslateblue;
+    border-radius: 1vw;
+    height: min-content;
+}
+
+aside:not(.main-index>aside) {
+    border: 0.1vw solid darkslateblue;
+    border-radius: 1vw;
+}
+
+
+footer {
+    text-align: center;
+    background-color: darkslateblue;
+    color: white;
+}
